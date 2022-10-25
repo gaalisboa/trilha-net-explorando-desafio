@@ -20,6 +20,6 @@ Reserva reserva = new Reserva(diasReservados: 5);
 reserva.CadastrarSuite(suite);
 reserva.CadastrarHospedes(hospedes);
 
-// Exibe a quantidade de hóspedes e o valor da diária
 Console.WriteLine($"Hóspedes: {reserva.ObterQuantidadeHospedes()}");
-Console.WriteLine($"Valor diária: {reserva.CalcularValorDiaria()}");
+Console.WriteLine($"Valor diária: {reserva.CalcularValorDiaria():C}");
+Console.WriteLine($"Preço total da reserva: {reserva.ValorTotal():C}");
